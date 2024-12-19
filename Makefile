@@ -52,7 +52,10 @@ win_create_dev_env:
 
 .PHONY: start
 start:  ## Starts the debug of the program
-	bash -c ". .venv/bin/activate && . .env && uvicorn main:app --reload"
+	@bash -c '. .venv/bin/activate && . .env && uvicorn main:app --reload --log-level error' 2>&1 \
+	| grep -E '(main.py|api/src|app/src)'
+
+
 
 .PHONY: win_start
 win_start:  ## Starts the debug of the program in windows environment

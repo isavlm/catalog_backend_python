@@ -3,7 +3,7 @@ name: CI - Lint and Test
 on:
   pull_request:
     branches:
-      - main  # Trigger the workflow when a pull request targets the `main` branch.
+        - '*'  # Trigger the workflow when a pull request targets in all branches
 
 jobs:
   lint-and-test:

@@ -4,3 +4,4 @@ from .create import CreateProduct, CreateProductRequest, CreateProductResponse
 from .delete import DeleteProduct, DeleteProductRequest, DeleteProductResponse
 from .update import UpdateProduct, UpdateProductRequest, UpdateProductResponse  
 from .delete import DeleteProduct, DeleteProductRequest, DeleteProductResponse 
+from .filter import FilterProductByStatus, FilterProductsByStatusResponse, FilterProductsByStatusRequest
